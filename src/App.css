@@ -1,38 +1,228 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+}
+.header{
+  display:flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #f5f5f5;
+  margin: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.logo{
+  
+  width: 10%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo img{
+  width:100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mid-header{
+  margin-top: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mid-header a{  
+  
+  text-decoration: none;
+  
+  margin: 15px;
+  
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+  
+  font-family:Arial, Helvetica, sans-serif;
+}
+.last-header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 35px;   
+
 }
 
-.App-link {
-  color: #61dafb;
+.search-header{
+  margin-right: 20px;
+}
+.search-header i {
+  margin-right: 5px;
+}
+.search-header input{
+  
+  border:none;
+  
+  background: #f5f5f5; 
+  
+  color: #707072;
+  
+  border-radius: 50px;
+ 
+  padding: 8px;
+ 
+  width: 140px;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.last-header-2{
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.last-header-2 i{
+  margin-right: 18px;
+}
+.body-web{
+  
+  display: block;
+}
+.body-web-img{
+  width: 100%;
+}
+.body-web-img img{
+  margin-top: 150px;
+  width:93%;
+  margin-left: 55px;
+}
+.body-web-des{
+ 
+  display: grid;
+
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif ;
+  margin-top: 40px;
+  line-height: 30px;
+}
+.des-1{
+  font-size: large;
+  font-weight: bold;
+}
+.des-2{
+  font-family:sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.des-3{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.button-des{
+  margin-left: 645px;
+  border-radius: 50px;
+  padding: 10px 35px;
+  background: #111111;
+  color: #f5f5f5;
+  font-size: large;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  cursor: pointer;
+  transition: 1s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-des:hover{
+  opacity:inherit ;
+  background-color: #707072;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding: 0 70px;
+}
+.footer-des{
+  display: flex;
+}
+.footer-des-1{
+  margin-right: 200px;
+}
+.des-1-1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 40px;
+}
+.footer-des-1 a{
+  text-decoration: none;
+  color:#70707b;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer-vietnam a{
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  font-size: 18px;
+}
+.footer-vietnam a:hover{
+  color:#70707b;
+}
+.last-footer{
+  display: flex;
+  padding: 0 70px;
+}
+.last-1{
+  margin-top: 16.5px;
+  margin-right: 25px;
+  font-size: 18;
+  color: #70707b;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.last-footer a{
+  text-decoration: none;
+  margin-right: 25px;
+  color: #70707b;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.last-footer a:hover{
+  color: black;
+}
+.body-shop{
+  display: flex;
+  margin-top: 170px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+.shop-1{
+  width: 300px;
+  background-color: azure;
+  padding: 15px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.shop-1:hover{
+  transform: translateY(-15px);
+
+}
+.shop-img{
+  width: 300px;
+  
+  
+}
+.shop-img  img{   
+  width: 100%;
+  border-radius: 10px;
+  
+}
+.shop-des{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.shop-des a {
+  text-decoration: none;
+}
+.shop-des a:first-child{
+  font-weight: bold;
+  color: black;
+}
+.shop-des a:first-child:hover{
+  color: #707072;
+}
+.shop-des p{
+  color: #707072;
+  line-height: 80%;
+}
+.price-tag p{
+  color: black;
+}
+.price-tag p:hover{
+  color: #707072;
 }
