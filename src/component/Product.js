@@ -59,6 +59,7 @@ function ProductList(props){
                 <th>Category</th>
                 <th>Price</th>
                 <th>Created At</th>
+                <th>Images</th>
                 <th>Action</th> 
               </tr>
             </thead>
@@ -74,6 +75,7 @@ function ProductList(props){
                     <td>{product.category}</td>
                     <td>{product.price}$</td>
                     <td>{product.createdAt}</td>
+                    <td>{product.url}</td>
                     <td style={{width:"10px" , whiteSpace:"nowrap"}}>
                       <button onClick={() => props.showForm(product)} type="button" className='btn btn-primary btn-sm me-2'>Edit</button>
                       <button onClick={() => deleteProduct(product.id)}  type="button"  className='btn btn-danger btn-sm '>Delete</button>
@@ -105,7 +107,7 @@ function ProductForm(props){
     // convert formdata to object
     const product = Object.fromEntries(formData.entries());
     //form validation
-    if (!product.name || !product.brand || !product.category || !product.price) {
+    if (!product.name || !product.brand || !product.category || !product.price ) {
       console.log("Please provide all the required fields");
       setErrorMessage(
         <div className="alert alert-warning" role="alert">
@@ -138,6 +140,7 @@ function ProductForm(props){
     }
     else {
     //tao san pham moi
+    
     product.createdAt = new Date().toISOString().slice(0,10);
     fetch("http://localhost:3004/products", {
       method:"POST",
@@ -151,6 +154,7 @@ function ProductForm(props){
         throw new Error("Unexpected Sever Reponse");  
        }
       return response.json()
+      
 
     })
     .then((data) => props.showList())
@@ -158,6 +162,7 @@ function ProductForm(props){
       console.error("Error", error);
 
     });
+    console.log(JSON.stringify(product))
   }
   }
   return(
@@ -201,11 +206,11 @@ function ProductForm(props){
                      name='category'
                       defaultValue={props.product.category} >
                         <option value='Other'>Other</option>
-                        <option value='Phones'>Phones</option>
-                        <option value='Computer'>Computer</option>
-                        <option value='Accessories'>Accessories</option>
-                        <option value='GPS'>GPS</option>
-                        <option value='Cameras'>Cameras</option>
+                        <option value='Red'>Red</option>
+                        <option value='Blue'>Blue</option>
+                        <option value='Brown'>Brown</option>
+                        <option value='Yellow'>Yellow</option>
+                        <option value='White'>White</option>
                         
                       </select>
                      </div>
@@ -226,6 +231,15 @@ function ProductForm(props){
                   <textarea className='form-control'
                      name='description'
                       defaultValue={props.product.description} />
+                     </div>
+                </div>
+
+                <div className='row mb-3'>
+                <label className='col-sm-4 col-form-label'>Url</label>
+                <div className='col-sm-8'>
+                  <textarea className='form-control'
+                     name='url'
+                      defaultValue={props.product.url} />
                      </div>
                 </div>
 

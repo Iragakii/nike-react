@@ -41,7 +41,7 @@ const Shop = () => {
                     <div class="shop-1">
                         <div class="shop-img"><Link
                                 href="http://127.0.0.1:5502/product/product.html"><img
-                                    src={require("./asset/jordan-stay-loyal-3-shoes-GNHN2X3.png")}
+                                    src={product.url}
                                     alt="abc"></img></Link></div>
                         <div class="shop-des">
                             <a

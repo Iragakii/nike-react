@@ -1,39 +1,43 @@
 {
   "products": [
     {
-      "id": "b939",
-      "name": "Xiaomi XSS",
-      "brand": "Xiaomi",
-      "category": "Phones",
-      "price": "222",
-      "description": "s",
+      "id": "24ad",
+      "name": "Air Jordan Luca",
+      "brand": "Jordan",
+      "category": "Blue",
+      "price": "8888",
+      "description": "dasdas",
+      "url": "\\asset\\tatum-2-pf-basketball-shoes-8fp79D.png",
       "createdAt": "2024-07-25"
     },
     {
-      "id": "562f",
-      "name": "Iphone XS",
-      "brand": "Iphone",
-      "category": "Phones",
-      "price": "9999",
+      "id": "ee58",
+      "name": "Piccolo Nike",
+      "brand": "Gucci",
+      "category": "Blue",
+      "price": "666",
+      "description": "ds",
+      "url": "\\asset\\luka-2-pf-basketball-shoes-N6gmH93.png",
+      "createdAt": "2024-07-25"
+    },
+    {
+      "id": "b27c",
+      "name": "Lion Nike",
+      "brand": "LouisVutton",
+      "category": "Brown",
+      "price": "666",
       "description": "",
+      "url": "\\asset\\zion-3-rising-pf-basketball-shoes-txLZ0h.png",
       "createdAt": "2024-07-25"
     },
     {
-      "id": "b7d4",
-      "name": "MacBook Pro",
-      "brand": "Apple",
-      "category": "Computer",
-      "price": "888",
-      "description": "s",
-      "createdAt": "2024-07-25"
-    },
-    {
-      "id": "3bae",
-      "name": "SamSung Galaxy",
-      "brand": "Samsung",
-      "category": "Phones",
+      "id": "41de",
+      "name": "Fire Jordan",
+      "brand": "Firefly",
+      "category": "Red",
       "price": "999",
-      "description": "Samsung",
+      "description": "",
+      "url": "\\asset\\jumpman-mvp-shoes-JV1HCs.png",
       "createdAt": "2024-07-25"
     }
   ]
