@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": "b939",
+      "name": "Xiaomi XSS",
+      "brand": "Xiaomi",
+      "category": "Phones",
+      "price": "222",
+      "description": "s",
+      "createdAt": "2024-07-25"
+    },
+    {
+      "id": "562f",
+      "name": "Iphone XS",
+      "brand": "Iphone",
+      "category": "Phones",
+      "price": "9999",
+      "description": "",
+      "createdAt": "2024-07-25"
+    },
+    {
+      "id": "b7d4",
+      "name": "MacBook Pro",
+      "brand": "Apple",
+      "category": "Computer",
+      "price": "888",
+      "description": "s",
+      "createdAt": "2024-07-25"
+    },
+    {
+      "id": "3bae",
+      "name": "SamSung Galaxy",
+      "brand": "Samsung",
+      "category": "Phones",
+      "price": "999",
+      "description": "Samsung",
+      "createdAt": "2024-07-25"
+    }
+  ]
+}

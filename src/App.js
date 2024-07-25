@@ -5,6 +5,7 @@ import Footer from './component/footer';
 import Header from './component/header';
 import LastFooter from './component/last_footer';
 import Shop from './component/shop';
+import { Products } from './component/Product';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path='/' element={<Footer></Footer>}></Route>
+      </Routes>
+      <Routes>
+        <Route path='/admin' element={<Products></Products>}></Route>
       </Routes>
 
      
